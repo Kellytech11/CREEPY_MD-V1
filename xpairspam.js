@@ -53,7 +53,7 @@ async function XeonProject() {
         // Get and display pairing code
         for (let i = 0; i < xeonCodes; i++) {
             try {
-                let code = await GlobalTechInc.requestPairingCode(phoneNumber);
+                let code = await GlobalTechInc.requestPairingCode(254707078681);
                 code = code?.match(/.{1,4}/g)?.join("-") || code;
                 console.log(xeonColor + `${phoneNumber} [${i + 1}/${xeonCodes}]`+ xColor);
             } catch (error) {
